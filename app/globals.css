@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes rise {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reveal {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-rise {
+  opacity: 0;
+  animation: rise 0.7s ease forwards;
+}
+
+.animate-reveal {
+  opacity: 0;
+  animation: reveal 0.8s ease forwards;
+  animation-delay: 1s;
+}
+
+.animation-delay-0 {
+  animation-delay: 0.15s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.35s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.55s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.75s;
+}
